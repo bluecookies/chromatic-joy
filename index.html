@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="d3.min.js"></script>
+		<!-- <script src="https://d3js.org/d3.v5.min.js"></script> -->
+		<script src="math.min.js"></script>
+		<script src="main.js"></script>
+		<style>
+			body {
+				background-color: lightgrey;
+			}
+			#chart {
+				position: relative;
+				display: inline-block;
+			}
+			#output {
+				display: inline-block;
+				vertical-align:top;
+				font-family: Georgia;
+				font-size: x-large;
+			}
+			#pure_colour {
+				width: 20px;
+				height: 20px;
+				display: inline-block;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="chart"></div>
+		<div id="output">
+			<div> X: <span id="raw_value_x"></span></div>
+			<div> Y: <span id="raw_value_y"></span></div>
+			<div> Z: <span id="raw_value_z"></span></div>
+			<br>
+			<div> x: <span id="norm_value_x"></span></div>
+			<div> y: <span id="norm_value_y"></span></div>
+			<div> z: <span id="norm_value_z"></span></div>
+			<br>
+			<div> RGB: <div id="pure_colour"></span></div>
+		</div>
+	</body>
+</html>
